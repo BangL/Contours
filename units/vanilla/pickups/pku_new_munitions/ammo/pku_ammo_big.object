@@ -1,0 +1,25 @@
+<dynamic_object>
+	<diesel orientation_object="rp_ammo_big" materials="units/vanilla/pickups/pku_new_munitions/ammo/pku_ammo" />
+	<sequence_manager file="units/vanilla/pickups/pku_new_munitions/pku_new_munitions" />
+	
+    <animations>
+        <animation_group name="anim_spawn" enabled="false">
+            <object name="anim_ammo_big_spawn" />
+        </animation_group>
+    </animations>
+	
+	<bodies>
+        <body name="static_body" enabled="true" template="editor">
+            <object name="c_ammo_big" collision_type="box" />
+        </body>
+    </bodies>
+	
+	<effects>
+		<effect_spawner name="beam" object="int_ammo_big_top" effect="units/vanilla/pickups/pku_new_munitions/ammo/pku_ammo_beam" enabled="false" />
+	</effects>
+	
+	<graphics>
+		<object name="g_ammo_big"		 enabled="true" shadow_caster="true" />
+		<object name="g_ammo_big_glow"	instance_struct="world_tm" enabled="true" />
+	</graphics>
+</dynamic_object>

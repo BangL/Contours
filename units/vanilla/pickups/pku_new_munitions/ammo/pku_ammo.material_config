@@ -1,0 +1,25 @@
+<materials version="3">
+    <material render_template="shadow_caster_only:INSTANCED" name="shadow_caster" version="2"/>
+    <material render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ammo_small" unique="true" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_health_ammo_granade/textures/mat_ammo_mags_svt40_white_df"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_health_ammo_granade/textures/mat_ammo_mags_svt40_white_nm"/>
+        <material_texture file="units/vanilla/pickups/pku_health_ammo_granade/textures/mat_ammo_mags_svt40_white_gsm"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+        <variable value="2000" type="scalar" name="contour_distance"/>
+    </material>
+    <material render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ammo" unique="true" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_health_ammo_granade/ammo_df"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_health_ammo_granade/ammo_nm"/>
+        <material_texture file="units/vanilla/pickups/pku_health_ammo_granade/ammo_gsm"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+        <variable value="2000" type="scalar" name="contour_distance"/>
+    </material>
+    <material name="mat_effect" unique="true" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM:DIFFUSE0_UVOFFSET:INSTANCED" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_new_munitions/effect_ammo_il"/>
+        <variable value="0 0 0" type="vector3" name="uv0_speed"/>
+        <variable value="candle" type="scalar" name="intensity"/>
+        <variable value="0 0 0" type="vector3" name="uv0_offset"/>
+    </material>
+</materials>

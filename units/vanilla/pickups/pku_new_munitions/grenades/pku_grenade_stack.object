@@ -1,0 +1,67 @@
+<dynamic_object>
+    <diesel orientation_object="rp_grenade_stack" materials="units/vanilla/pickups/pku_new_munitions/grenades/pku_grenade_stack" />
+    <sequence_manager file="units/vanilla/pickups/pku_new_munitions/pku_new_munitions" />
+	
+    <animations>
+        <animation_group name="anim_spawn" enabled="false">
+            <object name="anim_grenade_spawn_1" />
+            <object name="anim_grenade_spawn_2" />
+            <object name="anim_grenade_spawn_3" />
+            <object name="anim_grenade_spawn_4" />
+        </animation_group>
+    </animations>
+
+    <bodies>
+        <body name="static_body" enabled="true" template="editor">
+            <object name="rp_grenade_stack" />
+            <object name="c_editor" collision_type="box" />
+        </body>
+    </bodies>
+	
+	<effects>
+		<effect_spawner name="beam" object="e_grenade_top" effect="units/vanilla/pickups/pku_new_munitions/grenades/pku_grenade_beam" enabled="false" />
+	</effects>
+	
+	<graphics>
+		<lod_object name="lod_grenade_1">
+			<object name="g_grenade_1"		 enabled="true" max_distance="1600" />
+			<object name="g_grenade_1_lod"	 enabled="true" />
+		</lod_object>
+		<lod_object name="lod_grenade_2">
+			<object name="g_grenade_2"		 enabled="true" max_distance="1600" />
+			<object name="g_grenade_2_lod"	 enabled="true" />
+		</lod_object>
+		<lod_object name="lod_grenade_3">
+			<object name="g_grenade_3"		 enabled="true" max_distance="1600" />
+			<object name="g_grenade_3_lod"	 enabled="true" />
+		</lod_object>
+		<lod_object name="lod_grenade_4">
+			<object name="g_grenade_4"		 enabled="true" max_distance="1600" />
+			<object name="g_grenade_4_lod"	 enabled="true" />
+		</lod_object>
+		<lod_object name="lod_grenade_5">
+			<object name="g_grenade_5"		 enabled="true" max_distance="1600" />
+			<object name="g_grenade_5_lod"	 enabled="true" />
+		</lod_object>
+		<lod_object name="lod_grenade_6">
+			<object name="g_grenade_6"		 enabled="true" max_distance="1600" />
+			<object name="g_grenade_6_lod"	 enabled="true" />
+		</lod_object>
+		<lod_object name="lod_grenade_7">
+			<object name="g_grenade_7"		 enabled="true" max_distance="1600" />
+			<object name="g_grenade_7_lod"	 enabled="true" />
+		</lod_object>
+		<lod_object name="lod_grenade_8">
+			<object name="g_grenade_8"		 enabled="true" max_distance="1600" />
+			<object name="g_grenade_8_lod"	 enabled="true" />
+		</lod_object>
+		<lod_object name="lod_grenade_9">
+			<object name="g_grenade_9"		 enabled="true" max_distance="1600" />
+			<object name="g_grenade_9_lod"	 enabled="true" />
+		</lod_object>
+		<lod_object name="lod_grenade_10">
+			<object name="g_grenade_10"		 enabled="true" max_distance="1600" />
+			<object name="g_grenade_10_lod"	 enabled="true" />
+		</lod_object>
+    </graphics>
+</dynamic_object>

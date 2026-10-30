@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<mod name="BangL's Contours"
+     description="Custom contour colors for pickups."
+     author="BangL"
+     version="0.1"
+     min_sblt_version="2.0.0"
+     priority="900"
+     color="60 60 60">
+    <updates>
+        <update identifier="contours">
+            <host meta="https://raw.githubusercontent.com/BangL/raid-mods-meta/main/contours.json"/>
+        </update>
+    </updates>
+    <localization directory="loc" default="english.json">
+        <loc file="english.json" language="english"/>
+    </localization>
+    <hooks>
+        <post hook_id="lib/tweak_data/tweakdata"
+              script_path="lua/TweakData.lua" />
+        <post hook_id="lib/managers/menu/menucomponentmanager"
+              script_path="lua/MenuComponentManager.lua" />
+        <post hook_id="lib/units/interactions/interactionext"
+              script_path="lua/InteractionExt.lua" />
+    </hooks>
+</mod>

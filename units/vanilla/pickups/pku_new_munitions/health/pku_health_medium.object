@@ -1,0 +1,25 @@
+<dynamic_object>
+	<diesel orientation_object="rp_health_medium" materials="units/vanilla/pickups/pku_new_munitions/health/pku_health" />
+	<sequence_manager file="units/vanilla/pickups/pku_new_munitions/pku_new_munitions" />
+	
+    <animations>
+        <animation_group name="anim_spawn" enabled="false">
+            <object name="anim_health_medium_spawn" />
+        </animation_group>
+    </animations>
+
+	<bodies>
+        <body name="static_body" enabled="true" template="editor">
+            <object name="c_health_medium" collision_type="box" />
+        </body>
+    </bodies>
+	
+	<effects>
+		<effect_spawner name="beam" object="int_health_medium_top" effect="units/vanilla/pickups/pku_new_munitions/health/pku_health_beam" enabled="false" />
+	</effects>
+	
+	<graphics>
+		<object name="g_health_medium"		 enabled="true" shadow_caster="true" />
+		<object name="g_health_medium_glow"	instance_struct="world_tm" enabled="true" />
+	</graphics>
+</dynamic_object>
