@@ -8,7 +8,7 @@
      color="60 60 60">
     <updates>
         <update identifier="contours">
-            <host meta="https://raw.githubusercontent.com/BangL/raid-mods-meta/main/contours.json"/>
+            <host meta="https://raw.githubusercontent.com/BangL/raid-mods-meta/main/contours.json" patchnotes="https://github.com/BangL/Contours/blob/master/CHANGELOG.md"/>
         </update>
     </updates>
     <localization directory="loc" default="english.json">
