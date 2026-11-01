@@ -1,0 +1,19 @@
+<materials version="3">
+    <material unique="true" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="Default" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_eagle_statue/textures/eagle_statue_df"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_eagle_statue/textures/eagle_statue_gsm"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_eagle_statue/textures/eagle_statue_nm"/>
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_gold"/>
+        <variable name="gloss_factor" type="scalar" value="0.57000002707355"/>
+        <variable name="specular_factor" type="scalar" value="1.383000065689"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+        <variable value="2000" type="scalar" name="contour_distance"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM:INSTANCED" unique="true" name="mat_effect" version="2">
+        <variable name="intensity" type="scalar" value="candle"/>
+        <diffuse_texture file="units/vanilla/pickups/pku_mission_doc/mat_effect_yellow_df"/>
+        <variable name="uv0_speed" type="vector3" value="0 0.32499998807907 0"/>
+    </material>
+    <material render_template="shadow_caster_only:INSTANCED" name="shadow_caster" version="2"/>
+</materials>

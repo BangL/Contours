@@ -9,6 +9,7 @@ function BangLContoursMenu:Init(root)
 		localize = false,
 		h = 8,
 	})
+	self:EnableScrolling() -- header stays fixed, everything below scrolls
 	self._titles = {}
 
 	self:AutoBindNamedControlsBegin()

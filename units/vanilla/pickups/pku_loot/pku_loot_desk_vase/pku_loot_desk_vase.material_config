@@ -1,0 +1,19 @@
+<materials version="3">
+    <material unique="true" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2" name="Default">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_vase/textures/vase_df"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_vase/textures/vase_nm"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_vase/textures/vase_gsm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+        <variable type="scalar" value="0.95400004531257" name="gloss_factor"/>
+        <variable type="scalar" value="1.1510000546696" name="specular_factor"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+        <variable value="2000" type="scalar" name="contour_distance"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM:INSTANCED" unique="true" version="2" name="mat_effect">
+        <variable type="scalar" value="monitor" name="intensity"/>
+        <diffuse_texture file="units/vanilla/pickups/pku_mission_doc/mat_effect_yellow_df"/>
+        <variable type="vector3" value="-3.021999835968 0.30300024151802 0" name="uv0_speed"/>
+    </material>
+    <material render_template="shadow_caster_only:INSTANCED" version="2" name="shadow_caster"/>
+</materials>

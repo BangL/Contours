@@ -1,0 +1,18 @@
+<dynamic_object>
+    <diesel orientation_object="rp_pku_desk_coin_collection" materials="units/vanilla/pickups/pku_loot/pku_loot_desk_coin_collection/pku_loot_desk_coin_collection" />
+    <sequence_manager file="units/vanilla/pickups/pku_loot/pku_loot_desk_coin_collection/pku_loot_desk_coin_collection" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_pku_desk_coin_collection" />
+            <object name="c_box" collision_type="box" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_paper" enabled="true" material="paper" />
+    </decal_surfaces>
+    <graphics>
+        <object name="g_coin_collection" enabled="true" />
+        <object name="g_effect"                 instance_struct="world_tm" enabled="true" />
+        <object name="s_coin_collection"        instance_struct="world_tm" enabled="true" shadow_caster="true" />
+    </graphics>
+</dynamic_object>

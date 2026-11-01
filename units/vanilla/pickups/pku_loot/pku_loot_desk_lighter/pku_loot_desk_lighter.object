@@ -1,0 +1,18 @@
+<dynamic_object>
+    <diesel orientation_object="rp_pku_loot_desk_lighter" materials="units/vanilla/pickups/pku_loot/pku_loot_desk_lighter/pku_loot_desk_lighter" />
+    <sequence_manager file="units/vanilla/pickups/pku_loot/pku_loot_desk_lighter/pku_loot_desk_lighter" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_pku_loot_desk_lighter" />
+            <object name="c_box" collision_type="box" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_lighter" enabled="true" material="metal" />
+    </decal_surfaces>
+    <graphics>
+        <object name="g_effect"  instance_struct="world_tm" enabled="true" />
+        <object name="g_lighter" enabled="true" />
+        <object name="s_lighter" instance_struct="world_tm" enabled="true" shadow_caster="true" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,17 @@
+<materials version="3">
+    <material unique="true" name="mat_sundial" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_golden_compass/textures/compass_df"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_golden_compass/textures/compass_nm"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_golden_compass/textures/compass_gsm"/>
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_gold"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+        <variable value="2000" type="scalar" name="contour_distance"/>
+    </material>
+    <material unique="true" name="mat_effect" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM:INSTANCED" version="2">
+        <variable type="scalar" name="intensity" value="candle"/>
+        <diffuse_texture file="units/vanilla/pickups/pku_mission_doc/mat_effect_yellow_df"/>
+        <variable type="vector3" name="uv0_speed" value="0 0.32499998807907 0"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only:INSTANCED" version="2"/>
+</materials>

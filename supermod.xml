@@ -2,7 +2,7 @@
 <mod name="BangL's Contours"
      description="Custom contour colors for pickups."
      author="BangL"
-     version="0.1"
+     version="0.2"
      min_sblt_version="2.0.0"
      priority="900"
      color="60 60 60">

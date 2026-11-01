@@ -1,0 +1,18 @@
+<dynamic_object>
+	<diesel materials="units/vanilla/pickups/pku_loot/pku_loot_desk_golden_compass/pku_loot_desk_golden_compass" orientation_object="rp_pku_loot_desk_golden_compass" />
+	<sequence_manager file="units/vanilla/pickups/pku_loot/pku_loot_desk_golden_compass/pku_loot_desk_golden_compass" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_pku_loot_desk_golden_compass" />
+			<object name="c_box" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_compass" enabled="true" />
+		<object name="g_effect" 	instance_struct="world_tm" enabled="true" />
+		<object name="s_shadow" 	instance_struct="world_tm" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

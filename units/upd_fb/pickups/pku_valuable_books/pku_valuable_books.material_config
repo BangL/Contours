@@ -1,0 +1,11 @@
+<materials version="3">
+    <material unique="true" version="2" name="mat_books" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP">
+        <diffuse_texture file="units/vanilla/props/props_table_skills/textures/books_df"/>
+        <material_texture file="units/vanilla/props/props_table_skills/textures/books_gsm"/>
+        <bump_normal_texture file="units/vanilla/props/props_table_skills/textures/books_nm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+        <variable value="2000" type="scalar" name="contour_distance"/>
+    </material>
+</materials>

@@ -1,0 +1,19 @@
+<materials version="3">
+    <material render_template="shadow_caster_only:INSTANCED" name="shadow_caster" version="2"/>
+    <material unique="true" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_fab_egg" version="2">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_faberge_egg/textures/faberge_egg_df"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_faberge_egg/textures/faberge_egg_gsma"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_faberge_egg/textures/faberge_egg_nm"/>
+        <variable value="1.7540000833105" type="scalar" name="specular_factor"/>
+        <variable value="0.082000003894791" type="scalar" name="gloss_factor"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+        <variable value="2000" type="scalar" name="contour_distance"/>
+    </material>
+    <material unique="true" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM:INSTANCED" name="mat_effect" version="2">
+        <variable value="monitor" type="scalar" name="intensity"/>
+        <diffuse_texture file="units/vanilla/pickups/pku_mission_doc/mat_effect_yellow_df"/>
+        <variable value="-3.4219999313354 0.30300024151802 0" type="vector3" name="uv0_speed"/>
+    </material>
+</materials>

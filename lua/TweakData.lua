@@ -27,6 +27,27 @@ C.CATEGORIES = {
 		default = { 0, 0.5, 1 },
 		tweaks = { "grenade_pickup_new" },
 	},
+	{
+		id = "crowbar",
+		preset = "pickup_crowbar",
+		title = "Crowbar",
+		default = { 1, 1, 1 },
+		tweaks = { "gen_pku_crowbar" },
+	},
+	{
+		id = "dogtags",
+		preset = "pickup_dogtags",
+		title = "Dog Tags",
+		default = { 1, 1, 1 },
+		tweaks = { "press_take_dogtags", "hold_take_dogtags" },
+	},
+	{
+		id = "greed",
+		preset = "pickup_greed",
+		title = "Small Loot",
+		default = { 1, 1, 1 },
+		tweaks = { "press_take_loot", "press_take_loot_tight", "hold_take_loot" },
+	},
 }
 
 C._tweaks = {}

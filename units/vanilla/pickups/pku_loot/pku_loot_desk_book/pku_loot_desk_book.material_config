@@ -1,0 +1,17 @@
+<materials version="3">
+    <material unique="true" name="mat_desk_book" version="2" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_book/textures/desk_book_df"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_book/textures/desk_book_nm"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_book/textures/desk_book_gsm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+        <variable value="2000" type="scalar" name="contour_distance"/>
+    </material>
+    <material version="2" unique="true" name="mat_effect" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM:INSTANCED">
+        <variable value="monitor" name="intensity" type="scalar"/>
+        <diffuse_texture file="units/vanilla/pickups/pku_mission_doc/mat_effect_yellow_df"/>
+        <variable value="-3.4219999313354 0.30300024151802 0" name="uv0_speed" type="vector3"/>
+    </material>
+    <material name="shadow_caster" version="2" render_template="shadow_caster_only:INSTANCED"/>
+</materials>

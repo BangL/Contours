@@ -1,0 +1,22 @@
+<dynamic_object>
+    <diesel orientation_object="rp_pku_loot_globe" materials="units/vanilla/pickups/pku_loot/pku_loot_globe/pku_loot_globe" />
+    <sequence_manager file="units/vanilla/pickups/pku_loot/pku_loot_globe/pku_loot_globe" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_pku_loot_globe" />
+            <object name="c_box_01" collision_type="box" padding="-2.5" />
+            <object name="c_convex_01" collision_type="convex" padding="-2.5" />
+            <object name="c_convex_02" collision_type="convex" padding="-2.5" />
+            <object name="c_convex_03" collision_type="convex" padding="-2.5" />
+            <object name="c_convex_04" collision_type="convex" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_metal" enabled="true" material="metal" />
+    </decal_surfaces>
+    <graphics>
+        <object name="g_effect" instance_struct="world_tm" enabled="true" />
+        <object name="g_globe" enabled="true" />
+        <object name="s_globe"  instance_struct="world_tm" enabled="true" shadow_caster="true" />
+    </graphics>
+</dynamic_object>

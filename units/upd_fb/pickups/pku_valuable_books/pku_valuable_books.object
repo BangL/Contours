@@ -1,0 +1,18 @@
+<dynamic_object>
+	<diesel materials="units/upd_fb/pickups/pku_valuable_books/pku_valuable_books" orientation_object="rp_pku_book" />
+	<sequence_manager file="units/upd_fb/pickups/pku_valuable_books/pku_valuable_books" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_pku_book" />
+			<object name="c_c" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="paper"/>
+	<graphics>
+		<object name="g_book_1" enabled="true" />
+		<object name="g_book_2" enabled="true" />
+		<object name="g_book_3" enabled="true" />
+		<object name="g_book_4" enabled="true" />
+		<object name="g_book_5" enabled="true" />
+	</graphics>
+</dynamic_object>

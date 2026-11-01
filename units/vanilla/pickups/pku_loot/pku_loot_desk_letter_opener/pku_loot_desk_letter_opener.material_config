@@ -1,0 +1,17 @@
+<materials version="3">
+    <material unique="true" version="2" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM:INSTANCED" name="mat_effect">
+        <variable value="monitor" type="scalar" name="intensity"/>
+        <diffuse_texture file="units/vanilla/pickups/pku_mission_doc/mat_effect_yellow_df"/>
+        <variable value="-3.021999835968 0.30300024151802 0" type="vector3" name="uv0_speed"/>
+    </material>
+    <material version="2" render_template="shadow_caster_only:INSTANCED" name="shadow_caster"/>
+    <material unique="true" version="2" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="letter_opener">
+        <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_letter_opener/textures/letter_opener_df"/>
+        <bump_normal_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_letter_opener/textures/letter_opener_nm"/>
+        <material_texture file="units/vanilla/pickups/pku_loot/pku_loot_desk_letter_opener/textures/letter_opener_gsm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+        <variable value="2000" type="scalar" name="contour_distance"/>
+    </material>
+</materials>

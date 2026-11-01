@@ -1,0 +1,31 @@
+<dynamic_object>
+	<diesel orientation_object="rp_pku_dogtags_horizontal" materials="units/vanilla/pickups/pku_dogtag/pku_dogtags" />
+	<sequence_manager file="units/vanilla/pickups/pku_dogtag/pku_dogtag_horizontal" />
+	
+	<bodies>
+		<body name="body_editor" enabled="true" template="editor" >
+			<object name="rp_pku_dogtags_horizontal" />
+			<object name="c_box" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	
+    <effects>
+        <effect_spawner name="es_dogtag_flare" enabled="true" object="interaction" effect="effects/vanilla/flares/dogtag_flare" />
+    </effects> 
+
+	<graphics>
+		<graphic_group name="grp_unit" enabled="true" >
+			<lod_object name="dogtags" enabled="true" >
+				<object name="g_pku_dogtags_horizontal" enabled="true" max_distance="200" />
+				<object name="g_pku_dogtags_horizontal_lod_1" enabled="true" />
+			</lod_object>
+			<object name="s_pku_dogtags_horizontal" instance_struct="world_tm" enabled="true" shadow_caster="true" />
+		</graphic_group>
+		<graphic_group name="grp_effect" enabled="true" >
+			<lod_object name="effect" enabled="true" >
+				<object name="g_pku_dogtags_horizontal_effect" 		instance_struct="world_tm" enabled="true" max_distance="500" />
+				<object name="g_pku_dogtags_horizontal_effect_lod" 	instance_struct="world_tm" enabled="true" />
+			</lod_object>
+		</graphic_group>
+	</graphics>
+</dynamic_object>
