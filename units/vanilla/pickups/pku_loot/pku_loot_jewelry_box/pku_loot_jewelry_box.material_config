@@ -1,5 +1,5 @@
 <materials version="3">
-    <material version="2" name="mat_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:DOUBLE_SIDED:INSTANCED:NORMALMAP">
+    <material unique="true" version="2" name="mat_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:DOUBLE_SIDED:NORMALMAP">
         <opacity_texture file="units/vanilla/pickups/pku_loot/pku_loot_jewelry_box/textures/loot_jewelry_box_op"/>
         <diffuse_texture file="units/vanilla/pickups/pku_loot/pku_loot_jewelry_box/textures/loot_jewelry_box_df"/>
         <variable type="vector3" name="material_settings" value="0.74000000953674 0.25999999046326 1"/>
